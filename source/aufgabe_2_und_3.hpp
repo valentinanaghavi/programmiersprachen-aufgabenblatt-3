@@ -10,17 +10,4 @@ using namespace std;
 
     int main(int argc, char* argv[]);
 
-
-class Aufgabe_2_und_3
-{
-    public:
-    void printlist(list <unsigned int> l);
-
-
-    private:
-    unsigned int zufallz;
-
-
-};
-
 #endif //Aufgabe_2_und_3_HPP

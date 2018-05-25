@@ -45,7 +45,7 @@ int main(int argc, char* argv[])
 
 	for(int i = 1; i<=100; i++)
 	{
-		std::cout<< "Die Zahl "<< i <<" kommt "<<map_list[i]<< " vor."<<std::endl;
+		std::cout<< "Die Zahl "<< i <<" kommt "<<map_list[i]<< " mal vor."<<std::endl;
 }
 
 
