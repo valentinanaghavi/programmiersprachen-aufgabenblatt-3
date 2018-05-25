@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 }
 
 
-    TEST_CASE("Vec2_constructor", "[Vec2]")
+    /*TEST_CASE("Vec2_constructor", "[Vec2]")
     {
      
       SECTION("default_constructor")
@@ -370,4 +370,4 @@ TEST_CASE("Rectangle", "[Rectangle]")
         }
 
 
-      }
+      }*/
