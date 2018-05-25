@@ -6,6 +6,8 @@
 #include <stdio.h>
 #include <time.h>
 #include <set>
+#include <map>
+
 using namespace std;
 
 
@@ -33,6 +35,19 @@ int main(int argc, char* argv[])
         }
     }
     std::cout << std::endl; 
+
+    std::cout << "Haufigkeiten der Zahlen 1 bis 100: " << std::endl; 
+    std::map<unsigned int, unsigned int> map_list; //map pair
+	for(auto& i : random)
+	{
+		++map_list[i]; //Zaehlt Anzahl pro Zahl
+	}
+
+	for(int i = 1; i<=100; i++)
+	{
+		std::cout<< "Die Zahl "<< i <<" kommt "<<map_list[i]<< " vor."<<std::endl;
+}
+
 
 
     
