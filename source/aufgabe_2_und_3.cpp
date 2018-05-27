@@ -1,4 +1,3 @@
-#include "aufgabe_2_und_3.hpp"
 #include <iostream>
 #include <utility>
 #include <list>
@@ -7,6 +6,8 @@
 #include <time.h>
 #include <set>
 #include <map>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -46,13 +47,13 @@ int main(int argc, char* argv[])
 	for(int i = 1; i<=100; i++)
 	{
 		std::cout<< "Die Zahl "<< i <<" kommt "<<map_list[i]<< " mal vor."<<std::endl;
-}
+    }
 
 
+    std::vector<unsigned int> coplist; //Aufgabe 3.10
+    std::copy ( random.begin(), random.end(), coplist.begin() );
 
     
-    
- 
  
     return 0;
  

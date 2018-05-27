@@ -30,7 +30,7 @@ TEST_CASE("circle_sort", "[sort]") //Aufgabe 3.6
 
 TEST_CASE("circle_sort_lambda", "[sort]") //Aufgabe 3.7
 {
-	std::vector<Circle> sorted_circles{ 1,9,2,5,4,3}; 
+	std::vector<Circle> sorted_circles{ 1,9,2,10,4,3}; 
 
 	std::sort(sorted_circles.begin(),  sorted_circles.end(), [] (Circle const& c1,Circle const& c2) { return c1 < c2; });
 
