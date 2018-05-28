@@ -12,22 +12,22 @@ Circle :: Circle() :
     {};
 
 
-float Circle :: get_r() const
+double Circle :: get_r() const
 {
     return r_;
 
 }
 
 
-bool Circle:: operator<(Circle const& c) const//aufgabe 3.6
+bool Circle:: operator<(Circle const&  c) const//aufgabe 3.6
 {
-	return r_ < c.r_ ;
+	return r_ < c.r_;
 }
-bool Circle:: operator>(Circle const& c) const
+bool Circle:: operator>(Circle const&  c) const 
 {
 	return r_ > c.r_ ;
 }
-bool Circle:: operator==(Circle const& c) const
+bool Circle:: operator==(Circle const&  c) const
 {
 	return r_ == c.r_ ;
 }

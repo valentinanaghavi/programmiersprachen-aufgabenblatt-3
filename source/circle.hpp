@@ -1,6 +1,10 @@
 #ifndef CIRCLE_HPP
 #define CIRCLE_HPP
 
+#include <vector>
+#include <string>
+#include <iostream>
+
 
 class Circle
 {
@@ -8,7 +12,7 @@ class Circle
         Circle();
         Circle(float r_ );
 
-        float get_r() const; //radius
+        double get_r() const; //radius
         
         bool operator<(Circle const& c) const; //aufgabe 3.6
         bool operator>(Circle const& c) const;
