@@ -42,7 +42,10 @@ aufgabe_6.cpp
 circle.cpp)
 
 # Build aufgabe_9
-add_executable(aufgabe_9 aufgabe_9.cpp) 
+add_executable(aufgabe_9 aufgabe_9.cpp)
+
+# Build aufgabe_10
+add_executable(aufgabe_11 aufgabe_11.cpp)  
   
 
 
