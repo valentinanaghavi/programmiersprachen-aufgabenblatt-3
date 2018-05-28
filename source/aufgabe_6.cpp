@@ -10,7 +10,14 @@
 
 using namespace std;
 
-
+class Less_than
+{
+	public:
+	bool operator()(Circle const& c1, Circle const& c2) 
+	{
+		return c1.get_r() < c2.get_r();
+	};
+};
 
 
 int main(int argc, char * argv[]) {
@@ -33,6 +40,15 @@ TEST_CASE("circle_sort_lambda", "[sort]") //Aufgabe 3.7
 	std::vector<Circle> sorted_circles{ 1,9,2,10,4,3}; 
 
 	std::sort(sorted_circles.begin(),  sorted_circles.end(), [] (Circle const& c1,Circle const& c2) { return c1 < c2; });
+
+	REQUIRE (std::is_sorted( sorted_circles.begin(),  sorted_circles.end ()));
+}
+
+TEST_CASE("circle_sort_functor", "[sort]") //Aufgabe 3.8
+{
+	std::vector<Circle> sorted_circles{ 1,9,2,10,4,3}; 
+
+	std::sort(sorted_circles.begin(),  sorted_circles.end(), Less_than());
 
 	REQUIRE (std::is_sorted( sorted_circles.begin(),  sorted_circles.end ()));
 }
