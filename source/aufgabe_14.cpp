@@ -1,6 +1,7 @@
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
 #include "circle.hpp"
+#include"color.hpp"
 #include <algorithm>
 #include <vector>
 #include <cstdlib> 

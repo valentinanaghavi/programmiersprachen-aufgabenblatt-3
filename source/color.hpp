@@ -7,12 +7,12 @@
 struct Color
 {
     
-   // Color()
-   // {
-    //    r_ = 0.0f;
-     //   g_ = 0.0f;
-     //   b_ = 0.0f;
-    //}
+    Color():
+    
+        r_{0.0f},
+        g_{0.0f},
+        b_{0.0f}
+    {};
     Color(float r, float g, float b)
     {
         if((r >= 0.0f && r <= 1.0f) && (g >= 0.0f && g <= 1.0f) && (b >= 0.0f && b <= 1.0f))
